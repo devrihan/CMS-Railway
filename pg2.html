@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaint Management System</title>
+  <link rel="stylesheet" href="pg2.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>COMPLAIN MANAGEMENT SYSTEM</h1>
+      <button id="login-btn">Login</button>
+    </header>
+    <main>
+      <div class="dashboard">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="home.html"><i class="fas fa-home">🏠</i>Home</a></li>
+            <li><a href="pg2.html"><i class="fas fa-exclamation-circle">✉️</i> Raise Complaint</a></li>
+            <li><a href="pg5.html"><i class="fas fa-search">📄</i> Check Complaint Status</a></li>
+          </ul>
+        </nav>
+
+    <section class="complaint-form-container">
+      <form class="complaint-form">
+        <div class="form-heading">
+          <h2>Raise a Complaint</h2>
+        </div>
+        <div class="form-content">
+          <div class="form-row">
+            <div class="form-group" style="display: flex; flex-direction: row; width: 80%;">
+              <div style="flex: 1;">
+                <label for="employeeNo">Employee No. (11 characters):</label>
+                <input type="text" id="employeeNo" name="employeeNo" maxlength="11" required>
+              </div>
+
+              <div style="flex: 1; margin-left: 1rem;">
+                <label for="employeeName">Employee Name:</label>
+                <input type="text" id="employeeName" name="employeeName" required>
+              </div>
+
+              <div style="flex: 1; margin-left: 1rem;">
+                <label for="divisionContact">Division Contact Type:</label>
+                <select id="divisionContact" name="divisionContact" required>
+                  <option value="HQ">HQ</option>
+                  <option value="KUR">KUR</option>
+                  <option value="SEP">SEP</option>
+                  <option value="WAT">WAT</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" style="display: flex; flex-direction: row; width: 80%;">
+                <div style="flex: 1; margin-left: 1rem;">
+                  <label for="department">Department:</label>
+                  <select id="department" name="department" required>
+                    <option value="Accounts">Accounts</option>
+                    <option value="Personnel">Personnel</option>
+                    <option value="ENGG">ENGG</option>
+                    <option value="OPTG">OPTG</option>
+                   </select>
+               </div>
+
+               <div style="flex: 1; margin-left: 1rem;">
+                <label for="website">Select Website:</label>
+                <select id="website" name="website" required>
+                  <option value="IPAS">IPAS</option>
+                  <option value="e-office">e-office</option>
+                  <option value="Sparrow">Sparrow</option>
+                  <option value="east coast website">East Coast Website</option>
+                </select>
+              </div>
+
+              <div style="flex: 1; margin-left: 1rem;">
+                <label for="module">Module:</label>
+                <select id="module" name="module" required>
+                  <option value="Quarter">Quarter</option>
+                  <option value="Payroll">Payroll</option>
+                  <option value="Bill Passing">Bill Passing</option>
+                  <option value="Pension">Pension</option>
+                </select>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <label for="description">Description:</label><br>
+          <textarea id="description" name="description" rows="10" cols="50" maxlength="2000" required></textarea><br><br>
+
+          <label for="reference">Reference (PDF/JPG):</label><br>
+          <input type="file" id="reference" name="reference"><br><br>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+</div>
+</main>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2fbf5;
+  background-image: url(https://img.freepik.com/free-vector/esports-coaching-abstract-concept-illustration-lessons-with-pro-gamer-free-esport-webinar-player-performance-video-game-training-application-cybersport-team_335657-135.jpg?t=st=1717613787~exp=1717617387~hmac=a033856ed6439d82d113dfd452f3ed44690c4e1bea86bcd390f279341a83b3b8&w=740);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(46, 146, 253);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff8e;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.482);
+}
+
+h1 {
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  margin-top: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #8cfef4;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f3f3;
+  display: flex;
+  align-items: center;
+}
+.sidebar a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+main {
+  display: flex; /* Make main a flex container */
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically (optional) */
+}
+
+section.complaint-form-container {
+  /* Removed unnecessary ".complaint-form" class */
+  width: 100%; /* Adjust width as needed for the form */
+  background-color: #f0f0f0d8; /* Light gray background for the box */
+  border: 1px solid #ccc; /* Gray border for the box */
+  padding: 2rem; /* Padding around form elements (excluding heading) */
+  border-radius: 4px; /* Rounded corners for the box */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+section.complaint-form-container .form-heading {
+  padding-bottom: 1rem; /* Space below the heading */
+  border-bottom: 1px solid #ddd; /* Light gray border below heading */
+  margin-bottom: 1rem; /* Space below the border */
+}
+
+.complaint-form label {
+  display: block; /* Display labels on their own line */
+  margin-bottom: 0.5rem; /* Space between label and input */
+}
+
+.form-row .form-group {
+  /* Added styles for form groups within a row */
+  margin-right: 1rem; /* Space between groups */
+  flex: 1; /* Make groups equally sized */
+}
+
+input[type="text"],
+select {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 150px; /* Adjust textarea height as needed */
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.slide.open {
+  transform: translateX(100%); /* Slide navigation out on click */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 1rem; /* Add space between list items */
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#login-btn { /* Style login button (optional) */
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-form a {
+  font-size: smaller;
+  text-decoration: none;
+  color: #aaa;
+}
+
+#login-form a:hover {
+  color: #333;
+}
