@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(46, 146, 253);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.482);
+}
+
+h1 {
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  margin-top: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #8cfef4;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f3f3;
+  display: flex;
+  align-items: center;
+}
+.sidebar a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.content {
+  width: 80%;
+  padding: 10px;
+}
+
+main {
+      padding: 1rem;
+    }
+
+section {
+  align-items: center;
+}
+#login-btn {
+  background-color: #4CAF50; /* Green color */
+  color: white; /* White text for better contrast */
+  padding: 1rem 2rem; /* Increase padding for better click area */
+  border: none;
+  border-radius: 5px; /* Maintain rounded corners */
+  cursor: pointer; /* Indicate clickable behavior */
+  font-weight: bold; /* Make text bolder for emphasis */
+  transition: background-color 0.2s ease-in-out; /* Add a smooth hover effect */
+}
+
+#login-btn:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
